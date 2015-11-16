@@ -1,0 +1,49 @@
+{
+  "name": "sonea-utils",
+  "version": "0.0.1",
+  "description": "utilities for sonea",
+  "main": "lib/sonea-utils.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Naxmeify@github.com/Ninevillage/sonea-utils.git"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "sonea"
+  ],
+  "author": {
+    "name": "Ninevillage",
+    "email": "info@ninevillage.com",
+    "url": "https://www.ninevillage.com"
+  },
+  "contributors": [
+    {
+      "name": "MRW Neundorf",
+      "email": "matt@nax.me"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ninevillage/sonea-utils/issues"
+  },
+  "homepage": "https://github.com/Ninevillage/sonea-utils#readme",
+  "engines" : { 
+    "node" : ">=4.1.1",
+    "npm" : ">=2.14.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^7.1.1"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "lodash": "^3.10.1"
+  }
+}
