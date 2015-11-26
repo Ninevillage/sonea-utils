@@ -8,6 +8,26 @@
 [![Code Climate](https://codeclimate.com/github/Ninevillage/sonea-utils/badges/gpa.svg)](https://codeclimate.com/github/Ninevillage/sonea-utils)
 [![Test Coverage](https://codeclimate.com/github/Ninevillage/sonea-utils/badges/coverage.svg)](https://codeclimate.com/github/Ninevillage/sonea-utils/coverage)
 
-# more infos
+## Installation
+
+```
+$ npm install sonea-utils
+```
+
+## Usage
+
+```JavaScript
+var soneaUtils = require('sonea-utils');
+
+if(soneaUtils.file.isDirectory(__dirname)) {
+  console.log("It is a directory (>^.^)>");
+}
+```
+
+## more infos
 
 Look at sonea-utils documentation -> [here](https://github.com/Ninevillage/sonea-utils/wiki)
+
+## License
+
+> **MIT**
