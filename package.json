@@ -1,6 +1,6 @@
 {
   "name": "sonea-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "utilities for sonea",
   "main": "lib/sonea-utils.js",
   "directories": {
