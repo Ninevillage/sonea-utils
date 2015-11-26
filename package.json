@@ -26,7 +26,7 @@
   "contributors": [
     {
       "name": "MRW Neundorf",
-      "email": "matt@nax.me"
+      "email": "mohammed.neundorf@ninevillage.com"
     }
   ],
   "license": "MIT",
@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/Ninevillage/sonea-utils",
   "engines": {
-    "node": ">=4.1.1",
-    "npm": ">=2.14.4"
+    "node": ">0.12.7",
+    "npm": ">=2.11"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
