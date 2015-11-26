@@ -32,6 +32,12 @@ if(soneaUtils.file.isDirectory(__dirname)) {
 * [lodash](https://www.npmjs.com/package/lodash)
 * path
 
+## Supported node version (Based on Tests)
+
+Visit travis ci of this package. Tests running with several node versions.
+
+Minimum 0.12.7 currently. May run with 0.10.x too. Own risk!
+
 ## more infos
 
 Look at sonea-utils documentation -> [here](https://github.com/Ninevillage/sonea-utils/wiki)
