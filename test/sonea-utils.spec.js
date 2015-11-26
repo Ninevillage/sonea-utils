@@ -1,7 +1,7 @@
-var soneaUtils = require("..");
+var utils = require("..");
 
 describe('SoneaUtils', function () {
   it('should return an object', function () {
-    soneaUtils.should.be.an.object;
+    utils.should.be.an.object;
   });
 });

@@ -7,9 +7,7 @@ exclude_paths:
 - "LICENSE"
 - "README.md"
 
-engines:
-  fixme:
-    enabled: true
+# engines:
 
 ratings:
   paths: []

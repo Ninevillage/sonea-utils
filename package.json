@@ -33,10 +33,10 @@
   "bugs": {
     "url": "https://github.com/Ninevillage/sonea-utils/issues"
   },
-  "homepage": "https://github.com/Ninevillage/sonea-utils#readme",
-  "engines" : { 
-    "node" : ">=4.1.1",
-    "npm" : ">=2.14.4"
+  "homepage": "https://github.com/Ninevillage/sonea-utils",
+  "engines": {
+    "node": ">=4.1.1",
+    "npm": ">=2.14.4"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "sprintf-js": "^1.0.3"
   }
 }
