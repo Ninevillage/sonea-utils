@@ -24,6 +24,14 @@ if(soneaUtils.file.isDirectory(__dirname)) {
 }
 ```
 
+## utils currently for:
+
+* [debug](https://www.npmjs.com/package/debug)
+* file
+* global (exposing)
+* [lodash](https://www.npmjs.com/package/lodash)
+* path
+
 ## more infos
 
 Look at sonea-utils documentation -> [here](https://github.com/Ninevillage/sonea-utils/wiki)
