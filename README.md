@@ -1,5 +1,7 @@
 # sonea-utils
 
+[![npm version](https://badge.fury.io/js/sonea-utils.svg)](https://badge.fury.io/js/sonea-utils)
+
 [![Build Status](https://travis-ci.org/Ninevillage/sonea-utils.svg?branch=master)](https://travis-ci.org/Ninevillage/sonea-utils)
 [![Dependency Status](https://gemnasium.com/Ninevillage/sonea-utils.svg)](https://gemnasium.com/Ninevillage/sonea-utils)
 
