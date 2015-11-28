@@ -7,7 +7,15 @@ exclude_paths:
 - "LICENSE"
 - "README.md"
 
-# engines:
+engines:
+  fixme:
+    enabled: true
+  coffeelint:
+    enabled: true
+  nodesecurity:
+    enabled: true
+  eslint:
+    enabled: true
 
 ratings:
   paths: []

@@ -1,5 +1,7 @@
 # sonea-utils
 
+Common utilities. Main utility package of [sonea](https://github.com/Ninevillage/sonea).
+
 [![npm version](https://badge.fury.io/js/sonea-utils.svg)](https://badge.fury.io/js/sonea-utils)
 
 [![Build Status](https://travis-ci.org/Ninevillage/sonea-utils.svg?branch=master)](https://travis-ci.org/Ninevillage/sonea-utils)
