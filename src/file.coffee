@@ -13,18 +13,19 @@ exports.checkPath = (searchPath, extensions) ->
 
   if fs.existsSync(searchPath) then searchPath else false
 
-exports.findInPath = (searchPath, config, currentDepth) ->
+exports.findInPath = (searchPath, config={}, currentDepth=0) ->
   _this = this
   foundFiles = {}
+
   # Check Path - log warn and return empty if not exists
   if !exports.checkPath(searchPath)
     log 'findInPath failed. %s not exists', searchPath
     return foundFiles
+
   # check config attribute
-  if !_.isPlainObject(config)
-    config = {}
-  if _.isUndefined(currentDepth) or _.isNaN(currentDepth)
-    currentDepth = 0
+  throw new Error "Illegal Type: config must be plain object" unless _.isPlainObject(config)
+  throw new Error "Illegal Type: currentDepth must be a number" if _.isNaN(currentDepth)
+
   # setup default config
   defaultConfig =
     recursive: false
@@ -34,8 +35,9 @@ exports.findInPath = (searchPath, config, currentDepth) ->
       '.keep'
       '.gitignore'
     ]
+
   # merge defaultConfig with config
-  config = _.merge({}, defaultConfig, config)
+  config = _.merge {}, defaultConfig, config
   # read searchPath and iterate through files
   fs.readdirSync(searchPath).forEach (file) ->
     fileObj = {}
@@ -78,19 +80,22 @@ exports.isDirectory = (targetPath) ->
   return false unless @checkPath(targetPath)
   return fs.lstatSync(targetPath).isDirectory()
 
-exports.loadAndMerge = (searchPath, config) ->
+exports.loadAndMerge = (searchPath, config={}) ->
   self = this
   # check config attribute
-  if !_.isPlainObject(config)
-    config = {}
+  throw new Error "Illegal Type: config must be plain object" unless _.isPlainObject(config)
+
   defaultConfig =
     onFileBasename: false
     onRequire: (fileObj) ->
       require fileObj.path
-  config = _.merge({}, defaultConfig, config)
+
+  config = _.merge {}, defaultConfig, config
+
   log 'Load and Merge ' + searchPath
   files = exports.findInPath(searchPath, config)
   mergedResult = {}
+  
   for filePath of files
     fileObj = files[filePath]
     if _.isFunction(config.onRequire)
