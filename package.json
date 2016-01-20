@@ -2,12 +2,15 @@
   "name": "sonea-utils",
   "version": "0.0.3",
   "description": "utilities for sonea",
-  "main": "lib/sonea-utils.js",
+  "main": "./lib/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "build": "node_modules/.bin/coffee --bare --compile --output lib/ src/",
+    "postinstall": "npm run build",
+    "pretest": "npm run build",
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -23,22 +26,16 @@
     "email": "info@ninevillage.com",
     "url": "https://www.ninevillage.com"
   },
-  "contributors": [
-    {
-      "name": "MRW Neundorf",
-      "email": "mohammed.neundorf@ninevillage.com"
-    }
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ninevillage/sonea-utils/issues"
   },
   "homepage": "https://github.com/Ninevillage/sonea-utils",
   "engines": {
-    "node": ">0.12.7",
-    "npm": ">=2.11"
+    "node": ">=0.12.7"
   },
   "devDependencies": {
+    "coffee-script": "^1.10.0",
     "mocha": "^2.3.4",
     "should": "^7.1.1"
   },
